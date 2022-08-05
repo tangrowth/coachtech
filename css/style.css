@@ -1,0 +1,38 @@
+.btn {
+  position: relative;
+  background-color: royalblue;
+  width: 200px;
+  padding: 18px;
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 100px auto;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  background: url(../img/mail.svg)no-repeat;
+  background-size: cover;
+  width: 30px;
+  width: 30px;
+  transform: translateY(-50%);
+}
+
+.btn::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  background: url(../img/download__icon.svg)no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  transform: translateY(-50%);
+}
